@@ -12,6 +12,9 @@ const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 
 function startGame() {
+  for(var i=0;i<8;i++){
+  pattern[i] = Math.floor(Math.random() * 5);
+} 
   //initialize game variables
   progress = 0;
   gamePlaying = true;
